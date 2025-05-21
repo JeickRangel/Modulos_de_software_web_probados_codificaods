@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/05/2025, 11:27:32 AM
+    Author     : funda
+*/
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #4F5458;
+  }
+  
+  /* Contenedor principal */
+  .contenedor {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
+  /* Lado izquierdo */
+  .lado-izquierdo {
+    flex: 1.5;
+    background-image: url('Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    position: relative;
+    min-height: 400px;
+  }
+  
+  .logo {
+    width: 100px;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+  
+  .texto-bienvenida {
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: auto;   
+    margin-bottom: 80px; 
+    align-self: center;
+    text-align: left;
+  }
+  
+  .texto-bienvenida h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .texto-bienvenida p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Lado derecho */
+  .formulario-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: transparent;
+  }
+  
+  .caja-login {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .caja-login h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .caja-login p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .separador {
+    text-align: center;
+    color: #888;
+    margin: 15px 0;
+  }
+  
+  .social-login button {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .social-login button.google { color: #DB4437; }
+  .social-login button.facebook { color: #4267B2; }
+  .social-login button.apple { color: #000; }
+  
+  .registro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .lado-izquierdo,
+    .formulario-login {
+      flex: 1 1 100%;
+      padding: 30px;
+    }
+  
+    .texto-bienvenida {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+  
+    .logo {
+      width: 60px;
+    }
+  }
